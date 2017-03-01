@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		8A79527F1E66DBAC0008BFE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79527E1E66DBAC0008BFE8 /* AppDelegate.swift */; };
-		8A7952811E66DBAC0008BFE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7952801E66DBAC0008BFE8 /* ViewController.swift */; };
 		8A7952841E66DBAC0008BFE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7952821E66DBAC0008BFE8 /* Main.storyboard */; };
 		8A7952861E66DBAC0008BFE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A7952851E66DBAC0008BFE8 /* Assets.xcassets */; };
 		8A7952891E66DBAC0008BFE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7952871E66DBAC0008BFE8 /* LaunchScreen.storyboard */; };
+		8A7952911E66DC490008BFE8 /* OsagoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7952901E66DC490008BFE8 /* OsagoView.swift */; };
+		8A7952931E66DC520008BFE8 /* Osago.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7952921E66DC520008BFE8 /* Osago.swift */; };
+		8A7952951E66DC600008BFE8 /* OsagoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7952941E66DC600008BFE8 /* OsagoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8A79527B1E66DBAC0008BFE8 /* Program2Lesson1Krestinin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Program2Lesson1Krestinin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A79527E1E66DBAC0008BFE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8A7952801E66DBAC0008BFE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8A7952831E66DBAC0008BFE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A7952851E66DBAC0008BFE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A7952881E66DBAC0008BFE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A79528A1E66DBAC0008BFE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A7952901E66DC490008BFE8 /* OsagoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OsagoView.swift; sourceTree = "<group>"; };
+		8A7952921E66DC520008BFE8 /* Osago.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Osago.swift; sourceTree = "<group>"; };
+		8A7952941E66DC600008BFE8 /* OsagoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OsagoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,25 @@
 		8A79527D1E66DBAC0008BFE8 /* Program2Lesson1Krestinin */ = {
 			isa = PBXGroup;
 			children = (
+				8A7952961E66DC660008BFE8 /* Osago */,
 				8A79527E1E66DBAC0008BFE8 /* AppDelegate.swift */,
-				8A7952801E66DBAC0008BFE8 /* ViewController.swift */,
 				8A7952821E66DBAC0008BFE8 /* Main.storyboard */,
 				8A7952851E66DBAC0008BFE8 /* Assets.xcassets */,
 				8A7952871E66DBAC0008BFE8 /* LaunchScreen.storyboard */,
 				8A79528A1E66DBAC0008BFE8 /* Info.plist */,
 			);
 			path = Program2Lesson1Krestinin;
+			sourceTree = "<group>";
+		};
+		8A7952961E66DC660008BFE8 /* Osago */ = {
+			isa = PBXGroup;
+			children = (
+				8A7952901E66DC490008BFE8 /* OsagoView.swift */,
+				8A7952921E66DC520008BFE8 /* Osago.swift */,
+				8A7952941E66DC600008BFE8 /* OsagoViewController.swift */,
+			);
+			name = Osago;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +111,7 @@
 				TargetAttributes = {
 					8A79527A1E66DBAC0008BFE8 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = B553CN2745;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A7952811E66DBAC0008BFE8 /* ViewController.swift in Sources */,
+				8A7952951E66DC600008BFE8 /* OsagoViewController.swift in Sources */,
+				8A7952911E66DC490008BFE8 /* OsagoView.swift in Sources */,
+				8A7952931E66DC520008BFE8 /* Osago.swift in Sources */,
 				8A79527F1E66DBAC0008BFE8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +278,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B553CN2745;
 				INFOPLIST_FILE = Program2Lesson1Krestinin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = home.Program2Lesson1Krestinin;
@@ -272,6 +291,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B553CN2745;
 				INFOPLIST_FILE = Program2Lesson1Krestinin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = home.Program2Lesson1Krestinin;
